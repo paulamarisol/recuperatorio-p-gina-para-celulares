@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #1d1d1d;
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eaeaea;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #673DE6;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.lang img {
+  width: 20px;
+  border-radius: 2px;
+}
+
+.btn-outline {
+  border: 1.5px solid #673DE6;
+  background: transparent;
+  color: #673DE6;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #673DE6;
+  color: #fff;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+  background-color: #f9f9fb;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.hero-text ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.hero-text li {
+  margin-bottom: 10px;
+}
+
+.hero-text i {
+  color: #673DE6;
+  margin-right: 8px;
+}
+
+.descuento span {
+  color: #673DE6;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #673DE6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #5b32cc;
+}
+
+.garantia {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  max-width: 500px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* ---------------- MIGRACIÓN ---------------- */
+.migracion {
+  background-color: #1F1346;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.texto {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.padre {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hijo {
+  background-color: #2F1C6A;
+  border-radius: 10px;
+  padding: 30px;
+  flex: 1 1 300px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.hijo:hover {
+  transform: translateY(-5px);
+}
+
+.color {
+  background-color: #673DE6;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.botton {
+  background-color: #673DE6;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 32px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botton:hover {
+  background-color: #5b32cc;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #673DE6;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background-color: #f7f7ff;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.payment-methods img {
+  height: 30px;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  padding: 4px;
+  background: white;
+}
+
+.mas {
+  color: #673DE6;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #1d1d1d;
+  background-color: white;
+  border-radius: 8px;
+  padding: 6px;
+  transition: background 0.2s;
+}
+
+.social-icons i:hover {
+  background-color: #ececff;
+}
+
+.legal-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+  color: #673DE6;
+}
+
+hr {
+  border: 0.5px solid #e0e0e0;
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+.kodee-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #673DE6;
+  color: white;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: default;
+}
+
+.kodee-bubble i {
+  font-size: 18px;
+}
+
+/* ---------------- CONTENEDOR ---------------- */
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Móviles (≤768px) */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .migracion {
+    padding: 60px 15px;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+
+  .hijo {
+    text-align: center;
+  }
+
+  .color {
+    margin: 0 auto 10px;
+  }
+
+  .btn-outline,
+  .btn-primary,
+  .botton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .kodee-bubble {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+}
+
+/* Teléfonos pequeños (≤480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .social-icons i {
+    font-size: 18px;
+  }
+}
